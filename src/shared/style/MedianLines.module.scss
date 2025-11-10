@@ -1,0 +1,17 @@
+.line {
+  position: absolute;
+  background-color: #c7cdd9;
+  opacity: 50%;
+  z-index: -1;
+  &.y {
+    width: 1px;
+    height: 100%;
+    left: 50%;
+  }
+
+  &.x {
+    height: 1px;
+    width: 100%;
+    top: 44.44%;
+  }
+}

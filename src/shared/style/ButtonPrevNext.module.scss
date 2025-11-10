@@ -1,0 +1,45 @@
+.buttonPrevNext {
+  width: 5px;
+  aspect-ratio: 1;
+  padding: 5px 6px;
+
+  border: 1px solid #9ba5b9;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.025);
+
+    box-shadow: 1px 1px 10px 1px rgba(65, 66, 133, 0.301);
+
+    transition:
+      transform 200ms,
+      box-shadow 250ms;
+  }
+
+  &:disabled {
+    opacity: 50%;
+
+    pointer-events: none;
+  }
+}
+
+// MEDIA
+@media (min-width: 500px) {
+  .buttonPrevNext {
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media (min-width: 700px) {
+  .buttonPrevNext {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .buttonPrevNext {
+    padding: 1rem 1.2rem;
+  }
+}

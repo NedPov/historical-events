@@ -1,0 +1,97 @@
+.title {
+  color: #3877ee;
+  font-weight: 700;
+  font-family: 'Bebas Neue';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.wrapper {
+  height: 160px;
+  position: relative;
+}
+
+// кастомные кнопки
+.customPrev,
+.customNext {
+  display: none;
+}
+
+// MEDIA
+@media (min-width: 500px) {
+  .title {
+    font-size: 25px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .customPrev,
+  .customNext {
+    width: 40px;
+    aspect-ratio: 1;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px #bcccf5;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    z-index: 10;
+
+    transition: box-shadow 400ms;
+
+    &.dNone {
+      display: none;
+    }
+    &:hover {
+      box-shadow: 1px 1px 10px 3px rgba(87, 149, 197, 0.503);
+    }
+  }
+  .customPrev {
+    left: -20%;
+  }
+  .customNext {
+    right: -20%;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    min-height: 200px;
+  }
+
+  .customPrev {
+    left: -12%;
+  }
+  .customNext {
+    right: -12%;
+  }
+}

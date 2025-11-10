@@ -1,0 +1,58 @@
+%pattern {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.content {
+  display: none;
+  text-align: center;
+}
+
+.headers {
+  display: none;
+
+  position: absolute;
+  left: 3.5rem;
+  top: 0;
+}
+
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  transform-origin: center;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 300ms;
+  cursor: pointer;
+
+  &.isActive {
+    @extend %pattern;
+
+    .content {
+      display: block;
+    }
+
+    .headers {
+      display: block;
+    }
+  }
+
+  &:hover {
+    @extend %pattern;
+
+    .content {
+      display: block;
+      opacity: 100%;
+    }
+  }
+}

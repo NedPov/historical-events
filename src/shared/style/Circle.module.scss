@@ -1,0 +1,16 @@
+.circle {
+  position: absolute;
+  top: 44.44%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  border: 2px solid #c7cdd949; /* граница круга */
+}
+
+@media (min-width: 1000px) {
+  .circle {
+    top: 44.44%;
+  }
+}

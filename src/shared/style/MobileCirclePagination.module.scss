@@ -1,0 +1,13 @@
+.mobileCirclePagination {
+  width: 6px;
+  aspect-ratio: 1;
+  background-color: black;
+
+  border-radius: 50%;
+
+  opacity: 0.2;
+}
+
+.isActive {
+  opacity: 0.65;
+}

@@ -1,0 +1,9 @@
+.pageNumber {
+  font-size: 14px;
+}
+
+@media (min-width: 500px) {
+  .pageNumber {
+    font-size: 20px;
+  }
+}

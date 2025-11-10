@@ -1,0 +1,77 @@
+.pages {
+  min-height: 100vh;
+  padding: 0 20px;
+
+  .h1Block {
+    margin: {
+      top: 3rem;
+      right: 50%;
+      bottom: 3.5rem;
+    }
+    line-height: 1.1;
+    > h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+// MEDIA
+// меньше чер 320px
+@media (max-width: 300px) {
+  .pages {
+    > h1 {
+      font-size: 9vw;
+      text-align: start;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .pages {
+    position: relative;
+    padding: 2vh 0;
+
+    border: {
+      left: 1px solid #c7cdd9;
+      right: 1px solid #c7cdd9;
+    }
+
+    .h1Block {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      padding-top: 10px;
+
+      > h1 {
+        font-size: 6vw;
+        text-align: start;
+        width: 30%;
+        line-height: 1.2;
+      }
+    }
+
+    .bar {
+      width: 6px;
+      height: 10rem;
+      background: linear-gradient(0deg, rgba(239, 93, 168, 1) 0%, rgba(56, 119, 238, 1) 100%);
+    }
+
+    .titlePaginationBlock {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 15rem 3rem 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .pages {
+    padding: 2vh 0 8vh;
+
+    .titlePaginationBlock {
+      gap: 2rem;
+      margin: 15rem 2rem 0;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.datesFirstSecond {
+  display: flex;
+  gap: 3rem;
+  font-size: 11vw;
+  justify-content: center;
+}
+
+.firstYear {
+  color: #3877ee;
+}
+
+.secondYear {
+  color: #f178b6;
+}
+
+// MEDIA
+
+@media (max-width: 300px) {
+  .datesFirstSecond {
+    font-size: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .datesFirstSecond {
+    font-size: 8vw;
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 700px) {
+  .datesFirstSecond {
+    font-size: 6vw;
+    justify-content: center;
+
+    position: absolute;
+    top: 44.44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    line-height: 1;
+    gap: 4rem;
+  }
+
+  .firstYear {
+    color: #5d5fef;
+  }
+
+  .secondYear {
+    color: #ef5da8;
+  }
+}
+
+@media (min-width: 1000px) {
+  .datesFirstSecond {
+    top: 44.44%;
+  }
+}
